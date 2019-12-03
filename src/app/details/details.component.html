@@ -1,0 +1,6 @@
+<button class="btn btn-primary" (click)="toggleDisplay()">Display Details</button>
+<p *ngIf="display">Secret password: no one knows</p>
+<p *ngFor="let log of logs; let i = index" [ngStyle]="{backgroundColor: i >= 4 ? 'blue': 'transparent'}"
+    [ngClass]="{active: i >= 4}">
+    {{ log }}
+</p>
