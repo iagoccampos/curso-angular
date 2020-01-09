@@ -1,0 +1,41 @@
+.container {
+  margin-top: 30px;
+}
+
+/* Borda válida */
+input.ng-valid{
+    border-color: #28a745;
+}
+
+/* Mostra feedback válido */
+input.ng-valid~.valid-feedback{
+    display: block;
+}
+
+/* Feedback válido */
+.valid-feedback{
+    display: none;
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #28a745;
+}
+
+/* Borda inválida */
+input.ng-invalid.ng-touched{
+    border-color: #dc3545;
+}
+
+/* Mostra feedback inválido */
+input.ng-invalid.ng-touched~.invalid-feedback{
+    display: block;
+}
+
+/* Feedback inválido */
+.invalid-feedback {
+    display: none;
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
