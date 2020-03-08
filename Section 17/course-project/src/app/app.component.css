@@ -1,0 +1,4 @@
+:host /deep/ input.ng-invalid,
+:host /deep/ textarea.ng-invalid{
+	border-color: red;
+}
