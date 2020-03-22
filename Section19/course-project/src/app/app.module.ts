@@ -17,6 +17,7 @@ import { AppRountingModule } from './app-routing.module'
 import { RecipeDetailResolver } from './recipes/recipes-detail/recipe-detail-resolver.service'
 import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component'
 import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component'
+import { DataStorageService } from './shared/data-storage.service'
 
 @NgModule({
 	declarations: [
@@ -38,7 +39,7 @@ import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component
 		HttpClientModule,
 		AppRountingModule
 	],
-	providers: [RecipesService, ShoppingListService, RecipeDetailResolver],
+	providers: [RecipesService, ShoppingListService, RecipeDetailResolver, DataStorageService],
 	bootstrap: [AppComponent]
 })
 export class AppModule { }
